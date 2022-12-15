@@ -1,0 +1,153 @@
+.header {
+  // height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  &__hero {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1em;
+    min-height: calc(100vh - 7em);
+    // & > * + * {
+    //   margin-left: 3em;
+    // }
+
+    @media screen and (max-width: 900px) {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 8em;
+    }
+  }
+  &__description {
+    @media screen and (max-width: 900px) {
+      min-height: calc(100vh - 7em);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    background-image: linear-gradient(
+        to right,
+        rgba($secondary-color, 0.9),
+        rgba($teritiary-color, 0.7)
+      ),
+      url("/img/wrapsgirls/wraps-girl-1.jpg");
+    background-size: cover;
+    background-position: 40%;
+    background-repeat: no-repeat;
+  }
+  &__logo {
+    font-size: 5rem;
+    font-family: $logo-font;
+    font-weight: 500;
+    @media screen and (max-width: 770px) {
+      font-size: 4.6rem;
+    }
+  }
+  &__hero-image {
+    width: 30em;
+    max-width: 100%;
+    // transform: translate(-2em);
+    box-shadow: rgba($primary-color, 0.3) 0px 4px 12px;
+    transform: rotateY(25turn);
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+  }
+
+  .primary--heading {
+    .word-label {
+      position: relative;
+    }
+    font-size: 5rem;
+    line-height: 1;
+    text-align: left;
+    // @media screen and (max-width: 886px) {
+    //   // background-color: red;
+    // }
+    max-width: 55ch;
+    @media screen and (max-width: 544px) {
+      font-size: 5.3rem;
+    }
+  }
+
+  &__sub-title {
+    font-size: 3rem;
+    margin-top: 0.2em;
+    .word-label {
+      position: relative;
+    }
+    @media screen and (max-width: 886px) {
+      // background-color: red;
+      max-width: 45ch;
+    }
+  }
+  // &__description {
+  //   // height: 100vh;
+  // }
+}
+h1 span.mission {
+  font-size: 4rem;
+}
+.primary-nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 6em;
+  .social-media-links {
+    list-style: none;
+    display: flex;
+    max-width: 38em;
+    align-items: center;
+    font-size: 2rem;
+    font-family: roboto, serif;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 781px) {
+      display: none;
+    }
+    > * + * {
+      margin-left: 1.2em;
+    }
+    .social-media-link {
+      position: relative;
+    }
+    .social-media-link::after {
+      content: "";
+      position: absolute;
+      background: $primary-color;
+      // display: block;
+      // opacity: 0;
+      top: 97%;
+      left: 2%;
+      width: 0%;
+      height: 0.08em;
+      transition: width 0.7s ease-in-out;
+      // transition-delay: 0s;
+    }
+
+    .social-media-link:hover::after {
+      width: 100%;
+    }
+    @media screen and (max-width: 770px) {
+      max-width: 12em;
+      width: 43%;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.secondary--heading {
+  font-size: 7rem;
+  line-height: 1;
+  text-align: center;
+}
+.btn--donate {
+  padding: 0;
+  align-self: center;
+}

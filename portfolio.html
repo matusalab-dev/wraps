@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my Personal portfolio Website.</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>wraps ministry Inc.</title>
+  </head>
+  <style>
+    body {
+      color: #ff577f;
+      background-color: #ffd384;
+      padding: 0;
+      margin: 0;
+    }
+    a {
+      text-decoration: none;
+    }
+    .text__wrapper {
+      min-height: 100vh;
+      max-width: 85%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: left;
+    }
+    h2,
+    h4 {
+      margin: 0;
+      padding: 0;
+    }
+    h2 {
+      font-size: 5rem;
+      font-family: Roboto, sans-serif;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    h4 {
+      font-size: 2rem;
+      font-family: sans-serif;
+      font-weight: 100;
+      text-transform: uppercase;
+    }
+    .btn--back {
+      margin-top: 0.9em;
+      font-size: 2.5rem;
+      background-color: #ff577f;
+      color: #fff89c;
+      padding: 0.5em;
+      /* display: inline; */
+      text-align: center;
+    }
+    .logo {
+      font-family: "josefin sans";
+      font-size: 2.5rem;
+      background-color: #ff577f;
+      color: #fff89c;
+      padding: 0.5em;
+      /* max-width: 22%; */
+      text-align: center;
+      /* margin-bottom: 7rem; */
+      text-decoration: none;
+    }
+    @media screen and (max-width: 770px) {
+      .text__wrapper h2 {
+        font-size: 2.3rem;
+        line-height: 1;
+      }
+      .text__wrapper h4 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin-top: 0.5em;
+      }
+      .btn--back,
+      .logo {
+        padding: 0.2em;
+        font-size: 2rem;
+      }
+    }
+  </style>
+  <body class="container">
+    <div class="text__wrapper">
+      <a href="./index.html">
+        <p class="logo">Matusalab.dev</p>
+      </a>
+      <h2>Coming Soon!</h2>
+      <h4>
+        This is the website that I use to show My Personal Work Experience and
+        side-projects.
+      </h4>
+      <a class="btn--back" href="./index.html">back to home</a>
+    </div>
+  </body>
+</html>

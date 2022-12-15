@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="dist/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/4d5cf72bb4.js"
+      crossorigin="anonymous"
+    ></script>
+   
+    <script defer src="./app/js/app.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Judson:wght@400;700&family=Roboto:wght@300;400&family=Texturina:opsz,wght@12..72,300;12..72,400;12..72,500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap" rel="stylesheet"> 
+     <link rel="stylesheet" href="/app/sass/swiperjs.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <title>wraps ministry Inc.</title>
+
+
+ 
+  </head>
+  <style>
+  
+.swiper {
+  max-height: 25.5em;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* height: 30%; */
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* product description */
+.product__wrapper {
+  display: flex;
+  width: 100%;
+  margin-top: 7em;
+}
+
+.product__wrapper > * + * {
+  margin-left: 5em;
+}
+
+.product__description {
+  max-width: 40rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.description__wrapper > * + * {
+  margin-top: 0.5em;
+  /* margin-left: 1em; */
+}
+.header {
+  display: flex;
+  justify-content: stretch;
+}
+
+/* updated version of swiper */
+.swiper--updated {
+  color: #FFF89C;
+  margin: 0;
+}
+
+.swiper-btn--updated {
+  color: #FFF89C;
+  border: 0 solid #FFF89C;
+}
+
+@media screen and (max-width: 900px) {
+  /* .products__header {
+    background-image: none;
+    /* background-color: red; */
+  /* } */ 
+  .swiper {
+    width: 100%;
+
+  }
+}
+  </style>
+  <body class="spacer--lg">
+    <header class="header">
+      <div class="container spacer--lg">
+        <nav class="primary-nav">
+          <a href="#" class="header__logo" title="Washable Reusable Affordable Pads">Wraps</a>
+          <ul class="social-media-links">
+            <li>
+              <a
+                href="#comfort__collection"
+                
+                class="social-media-link"
+              >
+              Our Products
+              </a>
+            </li>
+            <li>
+              <a href="#"   class="social-media-link">
+              Our Mission
+              </a>
+            </li>
+            <li>
+              <a href="#FAQ" class="social-media-link">
+            
+                  About Us
+              </a>
+            </li>
+          </ul>
+            <a href="https://globaloutreach.org/giving/project-details/wraps-mark-and-allison-karnes" target="_blank" class="btn btn--primary btn--donate" 
+              >Donate!</a
+            >
+        </nav>
+
+        <div class="header__hero">
+          <div class="header__description spacer--sm">
+           
+            <h1 class="heading primary--heading">
+              <span class="mission">our ultimate mission : </span>
+              <br>
+             to inspire and nurture Ethiopian woman  and schoolgirls through education and job opportunities.
+            </h1>
+            <p class="header__sub-title" style="margin-top: 1.3em">A little goes a very long way. 
+            
+            </p>
+           <a href="https://globaloutreach.org/giving/project-details/wraps-mark-and-allison-karnes" target="_blank" class="btn btn--primary" style="margin-top: 1.3em"
+              >Donate!</a
+            >
+          </div>
+           <div class="swiper mySwiper swiper--updated">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/wrapsgirls/wraps-girl-1.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/wrapsgirls/wraps-girl-2.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/wrapsgirls/wraps-girl-3.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/wrapsgirls/wraps-girl-4.jpg" alt="" />
+              </div>
+             
+            </div>
+            <div
+              class="swiper-button-next swiper-btn--updated swiper-btn-next--updated"
+            ></div>
+            <div
+              class="swiper-button-prev swiper-btn--updated swiper-btn-prev--updated"
+            ></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+   
+    <!-- The main section of the page -->
+    <main class="comfort container" id="comfort__collection">
+      <h2 class="heading secondary--heading heading__comfort">
+        <span class="word-label">Latest</span> Products
+      </h2>
+      <!-- <hr class="learn-more-bar learn-more-bar--comfort" /> -->
+
+      <!-- comfort Categories -->
+      <div class="comfort__categories">
+        <p class="comfort__categories__label label--left">Categories</p>
+        <div class="comfort__categories__right indicator">
+          <a data-filter = "all" class="comfort__categories__label active-label active" >All</a>
+          <a data-filter = "bags"  class="comfort__categories__label">Bags</a>
+          <a data-filter = "hairbands" class="comfort__categories__label">Hair-bands</a>
+          <a  data-filter = "dolls"  class="comfort__categories__label">Dolls</a>
+        </div>
+      </div>
+
+      <!-- the comfort Collection  -->
+      <section class="comfort__collection collection" id="comfort">
+        <a
+          href="./product-page.html" data-category="bags"
+          class=" collection__image-1"
+        >
+          <img src="./img/img-1.jpg" alt="wraps bag product" class="collection__image" />
+        </a>
+        <a
+          href="./product-page.html"
+          class=" collection__image-2" data-category = "hairbands"
+        >
+          <img src="./img/img-2.jpg" alt="wraps bag product" class="collection__image" />
+        </a>
+        <a
+          href="./product-page.html"
+          class=" collection__image-3" data-category = "dolls"
+        >
+          <img src="./img/img-3.jpg" alt="wraps bag product"  class="collection__image"/>
+        </a>
+        <a
+          href="./product-page.html"
+          class=" collection__image-4"  data-category = "dolls"
+        >
+          <img src="./img/img-4.jpg" alt="wraps bag product" class="collection__image" />
+        </a>
+        <a
+          href="./product-page.html"
+          class=" collection__image-5" data-category="bags"
+        >
+          <img src="./img/img-5.jpg" alt="wraps bag product"  class="collection__image"/>
+        </a>
+        <a
+          href="./product-page.html"
+          class=" collection__image-6" data-category="bags"
+        >
+          <img src="./img/img-6.jpg" alt="wraps bag product"  class="collection__image"/>
+        </a>
+        <a
+          href="./product-page.html"
+          class=" collection__image-7" data-category = "hairbands"
+        >
+          <img src="./img/img-7.jpg" alt="wraps bag product"  class="collection__image"/>
+        </a>
+        <a
+          href="./product-page.html"
+          class=" collection__image-8" data-category = "hairbands"
+        >
+          <img src="./img/img-8.jpg" alt="wraps bag product" class="collection__image" />
+        </a>
+        <a
+          href="./product-page.html"
+          class=" collection__image-9" data-category="bags"
+        >
+          <img src="./img/img-9.jpg" alt="wraps bag product"  class="collection__image"/>
+        </a>
+        <a
+          href="./product-page.html"
+          class=" collection__image-10" data-category="bags"
+        >
+          <img src="./img/img-10.jpg" alt="wraps bag product"  class="collection__image"/>
+        </a>
+        <a
+          href="./product-page.html"
+          class=" collection__image-11" data-category="bags"
+        >
+          <img src="./img/img-11.jpg" alt="wraps bag product" class="collection__image" />
+        </a>
+        <a
+          href="./product-page.html"
+          class=" collection__image-12" data-category="bags"
+        >
+          <img src="./img/img-12.jpg" alt="wraps bag product"  class="collection__image"/>
+        </a>
+         <a
+          href="./product-page.html"
+          class=" collection__image-13"data-category="bags"
+        >
+          <img src="./img/img-13.jpg" alt="wraps bag product"  class="collection__image"/>
+        </a>
+        <a
+          href="./product-page.html"
+          class=" collection__image-14"data-category="bags"
+        >
+          <img src="./img/img-14.jpg" alt="wraps bag product"  class="collection__image"/>
+        </a>
+        <a
+          href="./product-page.html"
+          class=" collection__image-15"data-category="bags"
+        >
+          <img src="./img/img-15.jpg" alt="wraps bag product"  class="collection__image"/>
+        </a>
+       <a
+          href="./product-page.html"
+          class=" collection__image-16" data-category="bags"
+        >
+          <img src="./img/img-16.jpg" alt="wraps bag product"  class="collection__image"/> 
+        </a>
+        <a
+          href="./product-page.html"
+          class=" collection__image-17" data-category="bags"
+        >
+          <img src="./img/img-17.jpg" alt="wraps bag product"  class="collection__image"/>
+        </a>
+        <a
+          href="./product-page.html"
+          class=" collection__image-18" data-category="bags"
+        >
+          <img src="./img/img-18.jpg" alt="wraps bag product"  class="collection__image"/>
+        </a>
+        <a
+          href="./product-page.html"
+          class=" collection__image-19" data-category="bags"
+        >
+          <img src="./img/img-19.jpg" alt="wraps bag product"  class="collection__image"/>
+        </a>
+      </section>
+
+      <!-- Accordion section -->
+      <section class="FAQ" id="FAQ">
+        <h3 class="heading teritiary--heading">Learn more about Wraps</h3>
+        <hr class="learn-more-bar" />
+        <article class="FAQ__list">
+          <article class="FAQ__wrapper__details">
+            <h4 class="FAQ__heading">what is wraps?</h4>
+
+            <p class="FAQ__wrapper__description">
+              wraps was founded to empower Ethiopian women through education and
+              meaningful employment and to encourage rural primary schoolgirls
+              to remain in school through the distribution of environmentally
+              friendly, washable sanitary pad kits.
+            </p>
+          </article>
+          <hr />
+          <article class="FAQ__wrapper__details">
+            <h4 class="FAQ__heading">what is wraps?</h4>
+
+            <p class="FAQ__wrapper__description">
+              wraps was founded to empower Ethiopian women through education and
+              meaningful employment and to encourage rural primary schoolgirls
+              to remain in school through the distribution of environmentally
+              friendly, washable sanitary pad kits.
+            </p>
+          </article>
+          <hr />
+          <article class="FAQ__wrapper__details">
+            <h4 class="FAQ__heading">what is wraps?</h4>
+
+            <p class="FAQ__wrapper__description">
+              wraps was founded to empower Ethiopian women through education and
+              meaningful employment and to encourage rural primary schoolgirls
+              to remain in school through the distribution of environmentally
+              friendly, washable sanitary pad kits.
+            </p>
+          </article>
+          <hr />
+          <article class="FAQ__wrapper__details">
+            <h4 class="FAQ__heading">is wraps Eco-friendly?</h4>
+
+            <p class="FAQ__wrapper__description">
+              wraps was founded to empower Ethiopian women through education and
+              meaningful employment and to encourage rural primary schoolgirls
+              to remain in school through the distribution of environmentally
+              friendly, washable sanitary pad kits.
+            </p>
+          </article>
+          <hr />
+        </article>
+      </section>
+    </main>
+
+    <!-- the footer section -->
+    <footer class="footer container">
+      <div class="footer__container">
+        <div class="footer__wrapper footer__about">
+          <h4 class="heading footer__heading">About Us</h4>
+          <a href="#" class="footer__content" >our story</a>
+          <a href="#FAQ" class="footer__content">FAQ</a>
+        </div>
+        <div class="footer__wrapper">
+          <div class="footer__sub-content">
+            <h4 class="heading footer__heading">Get In touch</h4>
+            <a href="mailto:mtslabrh97@gmail.com" class="footer__content">
+              <i class="fa-solid fa-envelope"></i> Email Us
+            </a>
+            <a href="tel:+251914220188" class="footer__content">
+              <i class="fa-solid fa-phone"></i>+251914220188
+            </a>
+            <!-- <a href="tel:+251914220188" class="footer__content">
+             <i class="fa-solid fa-message-sms"></i>+251914220188
+            </a> -->
+          
+          </div>
+          <div class="footer__social-links">
+            <h4 class="heading footer__heading">follow Us!</h4>
+            <div class="social-link">
+              <a
+                href="https://t.me/wrapsforyou"
+                class="social-linckage"
+                target="_blank"
+                ><i class="fa-brands fa-telegram"></i
+              ></a>
+              <a href="https://www.instagram.com/wrapsforgirlss/" target="_blank"  class="social-linckage">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/WRAPSforgirls" target="_blank" class="social-linckage">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__wrapper">
+          <h4 class="heading footer__heading">We accept</h4>
+          <div class="flex">
+            <p class="footer__content">
+              <i class="fa-brands fa-cc-mastercard"></i>
+            </p>
+            <p class="footer__content">
+              <!-- <i class="fa-brands fa-cc-mastercard"></i> -->
+              <img src="./img/OIP.jfif" alt="telebirr" height="54px" class="tele-birr">
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <p class="copy-right container">
+        <i class="fa-solid fa-copyright"></i> copyright 2014 - 2022 | Wraps
+        non-profit ministry, All rights reserved.
+        <p class="copy-right dev-label">Designed | Developed By <a href="./portfolio.html" target="_blank" class="developer">Matusalab</a>
+        </p>
+      </p>
+    </footer>
+
+<!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
+<script>
+ var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+       autoplay: {
+    delay: 3000,
+  },
+    });
+</script>
+   
+  </body>
+</html>
